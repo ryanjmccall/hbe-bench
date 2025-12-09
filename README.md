@@ -63,5 +63,11 @@ We prioritize *reproducibility* over "flow state" amnesia. Every experiment is a
 - **Data:** The dataset checksum.
 - **Config:** The physics parameters (frequency, coupling, seed).
 
+## 📚 The Dojo
+
+🧠 **Train Your Mind**. Before you can emulate the brain, you must understand the physics.
+
+- Speed Run (Terminal): `python src/utils/drill.py`
+
 # 📄 License
 MIT
