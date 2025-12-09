@@ -1,0 +1,23 @@
+name: hbe-env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - jupyterlab
+  - pyyaml
+  - pytorch::pytorch
+  - pytorch::torchaudio
+  - pytorch::torchvision
+  - pip
+  - pip:
+    - wandb             # Experiment tracking
+    - gudhi             # Topological Data Analysis (TDA)
+    - ripser            # Fast persistence diagrams
+    - torch-geometric   # Graph Neural Networks
+

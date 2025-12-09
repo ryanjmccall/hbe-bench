@@ -1,0 +1,18 @@
+experiment:
+  name: "phase1-chaos-proof"
+  phase: "lorenz"  # This tells train.py which Dataset to load
+  seed: 42
+
+data:
+  forcing: 8.0     # The chaos parameter
+  num_vars: 40     # 40 dimensions
+  seq_len: 1000    # Total simulation steps
+  history_len: 50  # Lookback window
+  pred_len: 10     # Forecast horizon
+  dt: 0.01
+
+training:
+  batch_size: 32
+  epochs: 10
+  learning_rate: 0.001
+  device: "mps"    # Mac GPU acceleration
