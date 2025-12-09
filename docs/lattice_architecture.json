@@ -1,0 +1,90 @@
+{
+    "deck_name": "Lattice Architecture",
+    "description": "20-Ring Lattice, Spiral Phase Plates, and Topological Subtraction.",
+    "cards": [
+        {
+            "id": "lattice_architecture",
+            "concept": "20-Ring Lattice Architecture",
+            "levels": {
+                "1_recall": {
+                    "question": "To create a 20-dimensional manifold for complex computation, how many microrings does the AlGaAs chip use?",
+                    "answer": "20 rings (Ring 1 through Ring 20).",
+                    "insight": "Each ring produces one independent Hopfion stream, representing 1 dimension of the data."
+                },
+                "2_application": {
+                    "question": "What is the output of this 20-ring system called in the notes?",
+                    "answer": "A 'Hyper-Complex Interference Pattern' (or Stream T).",
+                    "insight": "The 20 independent streams ($P_1, Q_1$ to $P_{20}, Q_{20}$) mix to form a single, high-dimensional topological object."
+                },
+                "3_synthesis": {
+                    "question": "How does the 'Fiber Loop Mirror' contribute to this architecture?",
+                    "answer": "It creates a 'Standing Wave of Topology' where the pattern equals itself.",
+                    "insight": "This feedback loop stabilizes the 20-dimensional manifold so it can be read as a static state."
+                }
+            }
+        },
+        {
+            "id": "spp_mechanics",
+            "concept": "Spiral Phase Plate (SPP)",
+            "levels": {
+                "1_recall": {
+                    "question": "What physical object is used to create the spatial twist 'P' (the donut body)?",
+                    "answer": "The Spiral Phase Plate (SPP).",
+                    "insight": "It is described as a 'spiral staircase cut into a piece of glass'."
+                },
+                "2_application": {
+                    "question": "How is the step height of the SPP determined?",
+                    "answer": "It must be an integer number of wavelengths ($N \times 1.55$ microns).",
+                    "insight": "This integer constraint ensures the wavefront twists perfectly without destructive interference at the step."
+                },
+                "3_synthesis": {
+                    "question": "What are the estimated 'Byte Limits' (Max N) for this encoding?",
+                    "answer": "Conservative: 100 ($P=10, Q=10$). Optimistic: 2,500 ($P=50, Q=50$).",
+                    "insight": "This confirms a single photon pulse can encode an entire Byte or even an Amino Acid directly."
+                }
+            }
+        },
+        {
+            "id": "biological_logic_crash",
+            "concept": "Topological Subtraction (The Crash)",
+            "levels": {
+                "1_recall": {
+                    "question": "In the biological simulation, if Protein A is a '3-knot', what is Receptor B?",
+                    "answer": "A '-3-knot' ($P=-3$).",
+                    "insight": "Biological binding is modeled as topological key-lock matching."
+                },
+                "2_application": {
+                    "question": "What happens mathematically when the 3-knot meets the -3-knot?",
+                    "answer": "They 'Crash' to 0 ($3 + (-3) = 0$).",
+                    "insight": "The 'Zero State' (Vacuum) represents a successful binding/reaction event."
+                },
+                "3_synthesis": {
+                    "question": "Why is 'Noise' unlikely to trigger this specific reaction?",
+                    "answer": "Because of 'Topological Protection'.",
+                    "insight": "Random noise doesn't have a winding number. Only the exact inverse topology can un-knot the field, making the logic incredibly robust."
+                }
+            }
+        },
+        {
+            "id": "fsr_guitar_string",
+            "concept": "Free Spectral Range (FSR)",
+            "levels": {
+                "1_recall": {
+                    "question": "What musical instrument analogy is used to explain the Microring Resonator?",
+                    "answer": "A Guitar String.",
+                    "insight": "The ring only 'sings' (resonates) at specific tones, just like a plucked string."
+                },
+                "2_application": {
+                    "question": "What is the FSR (Free Spectral Range) in this analogy?",
+                    "answer": "The frequency gap between valid tones.",
+                    "insight": "This gap defines the 'grid' of colors available for your computation."
+                },
+                "3_synthesis": {
+                    "question": "How does ring size affect FSR?",
+                    "answer": "Big Ring = Low FSR (Close tones). Tiny Ring = High FSR (Tones far apart).",
+                    "insight": "This trade-off determines how many distinct data channels (colors) you can fit on one chip."
+                }
+            }
+        }
+    ]
+}

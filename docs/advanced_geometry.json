@@ -1,0 +1,90 @@
+{
+    "deck_name": "Advanced Geometry",
+    "description": "Deep dive into Hopf Fibration, Nested Tori, and OAM.",
+    "cards": [
+        {
+            "id": "hopf_fibration",
+            "concept": "Hopf Fibration",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Hopf Fibration.",
+                    "answer": "Map decomposing S3 (in 4D) into interlocking circles (fibers); tori emerge within its structure.",
+                    "insight": "S3 -> S2."
+                },
+                "2_application": {
+                    "question": "In the Hopf Fibration, what shape do the fibers map to in the base space S2?",
+                    "answer": "points",
+                    "insight": "Each fiber corresponds to a point on the sphere."
+                },
+                "3_synthesis": {
+                    "question": "Why is the Hopf Fibration called the 'source code' of 3D knots?",
+                    "answer": "It defines the fundamental way 3D space can be structured with linked loops, generating non-trivial topology.",
+                    "insight": "It generates the structure."
+                }
+            }
+        },
+        {
+            "id": "nested_tori",
+            "concept": "Nested Tori",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Nested Tori.",
+                    "answer": "Hopf fibration fills 3D space with nested tori.",
+                    "insight": "Like onion layers."
+                },
+                "2_application": {
+                    "question": "Do these nested tori ever intersect each other? (yes/no)",
+                    "answer": "no",
+                    "insight": "They fill space without intersection."
+                },
+                "3_synthesis": {
+                    "question": "Visualizing 3D space as filled with nested tori helps us understand what physical property?",
+                    "answer": "The structure of complex flow fields or electromagnetic field lines in a knotted configuration.",
+                    "insight": "Field line visualization."
+                }
+            }
+        },
+        {
+            "id": "fibers_as_loops",
+            "concept": "Fibers as Loops",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Fibers as Loops.",
+                    "answer": "Each nested torus is composed of Hopf circles (fibers).",
+                    "insight": "The tori are made of circles."
+                },
+                "2_application": {
+                    "question": "Are these fibers linked with each other? (yes/no)",
+                    "answer": "yes",
+                    "insight": "They are linked exactly once."
+                },
+                "3_synthesis": {
+                    "question": "What is the significance of every pair of fibers being linked exactly once?",
+                    "answer": "It signifies the non-trivial Hopf invariant (linking number = 1), the simplest non-trivial map from S3 to S2.",
+                    "insight": "Hopf invariant = 1."
+                }
+            }
+        },
+        {
+            "id": "oam",
+            "concept": "OAM (Orbital Angular Momentum)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define OAM (Orbital Angular Momentum).",
+                    "answer": "Light with a twisted wavefront (helical phase).",
+                    "insight": "Twisted light."
+                },
+                "2_application": {
+                    "question": "Does OAM depend on polarization (spin)? (yes/no)",
+                    "answer": "no",
+                    "insight": "It is independent of spin."
+                },
+                "3_synthesis": {
+                    "question": "How does OAM allow for infinite data density?",
+                    "answer": "The twist (topological charge) is an integer that can be arbitrarily large, providing an infinite alphabet.",
+                    "insight": "Unbounded state space."
+                }
+            }
+        }
+    ]
+}

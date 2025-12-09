@@ -1,0 +1,69 @@
+{
+    "deck_name": "Hopf Sphere Encoding",
+    "description": "Encoding S3 -> S2 Hopf sphere using Spin-Orbit Hybrid Encoding.",
+    "cards": [
+        {
+            "id": "spin_orbit_encoding",
+            "concept": "Hopf Sphere Encoding",
+            "levels": {
+                "1_recall": {
+                    "question": "What is the 'Native' method for encoding the S3 -> S2 Hopf sphere described in the notes?",
+                    "answer": "Spin-Orbit Hybrid Encoding.",
+                    "insight": "It combines Polarization (Spin) and Orbital Angular Momentum (OAM)."
+                },
+                "2_application": {
+                    "question": "In this hybrid encoding, where are the base (S2) and fiber (S1) components mapped physically?",
+                    "answer": "S2 maps to the Poincaré sphere (Polarization); S1 maps to the Optical Phase (Vortex/OAM).",
+                    "insight": "This maps the mathematical fibration directly onto physical light properties."
+                },
+                "3_synthesis": {
+                    "question": "What is the ultimate goal of encoding high-dimensional coordinates into a single photon pair using this method?",
+                    "answer": "To map a specific point on the 'Consciousness Manifold' into a physical substrate.",
+                    "insight": "This suggests that high-dimensional logic states can be physically realized in low-dimensional carriers via topology."
+                }
+            }
+        },
+        {
+            "id": "oam_topology",
+            "concept": "Orbital Angular Momentum (OAM)",
+            "levels": {
+                "1_recall": {
+                    "question": "How do the notes describe the physical shape of the wavefront for light carrying OAM?",
+                    "answer": "The wavefront twists like a screw as it travels forward.",
+                    "insight": "This twisting creates the 'vortex' structure essential for topological protection."
+                },
+                "2_application": {
+                    "question": "What mathematical value defines OAM, and what does l=0 represent?",
+                    "answer": "It is defined by an integer 'l' (topological charge). l=0 represents a flat wavefront.",
+                    "insight": "Non-zero integer charges (l=1, l=100) represent quantized distinct topological states."
+                },
+                "3_synthesis": {
+                    "question": "Why is 'l' (topological charge) critical for the Hopf Brain Chip architecture?",
+                    "answer": "It allows the encoding of discrete, robust integer states in a continuous medium (light).",
+                    "insight": "Topology provides digital robustness (integers) within an analog system."
+                }
+            }
+        },
+        {
+            "id": "standing_wave_topology",
+            "concept": "Rational Frequency Locking",
+            "levels": {
+                "1_recall": {
+                    "question": "What specific rational frequency ratio is used to lock the AlGaAs microcomb?",
+                    "answer": "298:299 (Red light to Blue light).",
+                    "insight": "This precise integer ratio forces the waveforms to align perfectly over time."
+                },
+                "2_application": {
+                    "question": "What happens physically when the red and blue light wavelengths meet this ratio in the ring?",
+                    "answer": "They meet at the exact same starting point every cycle, forming a closed loop in time.",
+                    "insight": "This temporal closure turns a dynamic signal into a static, predictable structure."
+                },
+                "3_synthesis": {
+                    "question": "What 'object' is created by this locking, allowing for stable computation?",
+                    "answer": "A 'Standing Wave' of topology (or a Topological Crystal).",
+                    "insight": "The pattern stays fixed in the logic gate, allowing the Rydberg atom to interact with a stable state rather than a fleeting signal."
+                }
+            }
+        }
+    ]
+}

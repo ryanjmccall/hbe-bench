@@ -1,0 +1,69 @@
+{
+    "deck_name": "The Time Engine",
+    "description": "The Pulse of Time (Q), Bichromatic Engine, and P & Q Compatibility.",
+    "cards": [
+        {
+            "id": "pulse_of_time_q",
+            "concept": "The Pulse of Time (Q)",
+            "levels": {
+                "1_recall": {
+                    "question": "In the HPU architecture, if 'P' builds the donut in space, what does 'Q' do?",
+                    "answer": "It 'extrudes' the donut through time.",
+                    "insight": "Time is treated as a physical dimension that gives the 2D spatial knot its 3D topological volume."
+                },
+                "2_application": {
+                    "question": "What specific physical mechanism generates the 'Q' value (Time Twist)?",
+                    "answer": "A Bichromatic Beat between two laser beams ('Bass' and 'Treble').",
+                    "insight": "The rhythm of interference between two slightly different frequencies ($\lambda_1$ and $\lambda_2$) drives the rotation."
+                },
+                "3_synthesis": {
+                    "question": "Visually, what is the difference between a static P=1 state and a dynamic Q state?",
+                    "answer": "P=1 is a spinning 2D object (smoke ring); Q adds the 'flying and rotating' motion around the ring's body.",
+                    "insight": "Q defines how many times the particle wraps around the toroidal body during one full cycle of the 'movie'."
+                }
+            }
+        },
+        {
+            "id": "bichromatic_engine",
+            "concept": "The Bichromatic Engine",
+            "levels": {
+                "1_recall": {
+                    "question": "What musical analogy is used to describe the two laser beams driving the engine?",
+                    "answer": "'Bass' ($\lambda_1$) and 'Treble' ($\lambda_2$).",
+                    "insight": "Just like in music, the interplay between a low and high frequency creates a beat or rhythm."
+                },
+                "2_application": {
+                    "question": "Describe the 3-step cycle of the 'Beat' described in the notes.",
+                    "answer": "t=0 (In Sync/Constructive) -> t=1 (Drift Apart/Destructive) -> t=2 (Back in Sync).",
+                    "insight": "This cycle of constructive and destructive interference creates the 'clock' that drives the topological knot."
+                },
+                "3_synthesis": {
+                    "question": "Why is the specific ratio 298:299 critical for the AlGaAs ring?",
+                    "answer": "It forces the 'Bass' (298 cycles) and 'Treble' (299 cycles) to meet at the exact same starting point, closing the loop.",
+                    "insight": "This integer locking turns a fleeting signal into a 'Topological Crystal'—a fixed object in time that logic gates can process."
+                }
+            }
+        },
+        {
+            "id": "topological_compatibility",
+            "concept": "P & Q Compatibility",
+            "levels": {
+                "1_recall": {
+                    "question": "In the HPU simulation model, what do P and Q correspond to in biological terms?",
+                    "answer": "P = Shape (Identity), Q = Energy State.",
+                    "insight": "This mapping allows physics to simulate biological docking problems directly."
+                },
+                "2_application": {
+                    "question": "What is the rule for two knots (proteins) merging in this system?",
+                    "answer": "They will not merge unless *both* P (Shape) and Q (Energy) are compatible.",
+                    "insight": "This mimics nature: a protein won't bind just because it fits; it must also be in the correct vibrational energy state."
+                },
+                "3_synthesis": {
+                    "question": "If 'Resting' maps to Q=1, what does a High Energy/Excited state map to?",
+                    "answer": "Q = 5 (or higher integers).",
+                    "insight": "Vibrational energy is quantized into topological winding numbers."
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "deck_name": "Topology Basics",
+    "description": "Fundamental concepts of topology including Genus, Euler Characteristic, and Manifolds.",
+    "cards": [
+        {
+            "id": "genus",
+            "concept": "Genus (g)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Genus (g).",
+                    "answer": "Number of holes in a topological space.",
+                    "insight": "It is a fundamental topological invariant."
+                },
+                "2_application": {
+                    "question": "Calculate the genus of a surface with Euler Characteristic chi = -2. (Hint: chi = 2 - 2g)",
+                    "answer": "2",
+                    "insight": "chi = 2 - 2g => -2 = 2 - 2g => 2g = 4 => g = 2."
+                },
+                "3_synthesis": {
+                    "question": "How does increasing the genus of a material affect its potential for connectivity in a network?",
+                    "answer": "Higher genus allows for more non-intersecting paths and complex routing without crossing.",
+                    "insight": "This is crucial for complex interconnects."
+                }
+            }
+        },
+        {
+            "id": "euler_characteristic",
+            "concept": "Euler Characteristic (chi)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Euler Characteristic (chi).",
+                    "answer": "Topological invariant; chi = V - E + F (polyhedra) or 2 - 2g (surfaces).",
+                    "insight": "It relates the topology to the geometry."
+                },
+                "2_application": {
+                    "question": "A cube has V=8, E=12, F=6. Calculate its Euler Characteristic.",
+                    "answer": "2",
+                    "insight": "8 - 12 + 6 = 2. This is consistent with a sphere (g=0)."
+                },
+                "3_synthesis": {
+                    "question": "Why is the Euler Characteristic considered a 'checksum' for shape integrity?",
+                    "answer": "It remains constant regardless of how you mesh the surface, detecting errors in geometry.",
+                    "insight": "Useful for validating 3D models."
+                }
+            }
+        },
+        {
+            "id": "topological_invariant",
+            "concept": "Topological Invariant",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Topological Invariant.",
+                    "answer": "Property unchanged under continuous deformation (stretching/bending) but not tearing/gluing.",
+                    "insight": "Examples include Genus and Euler Characteristic."
+                },
+                "2_application": {
+                    "question": "Is 'Volume' a topological invariant? (yes/no)",
+                    "answer": "no",
+                    "insight": "Volume changes with stretching."
+                },
+                "3_synthesis": {
+                    "question": "Why do we care about invariants in computing?",
+                    "answer": "They provide robust states for memory that are immune to local noise/deformations.",
+                    "insight": "Basis for topological quantum computing."
+                }
+            }
+        },
+        {
+            "id": "sphere",
+            "concept": "Sphere (P=0)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Sphere (P=0).",
+                    "answer": "Can be shrunk to a point, zero holes.",
+                    "insight": "Genus 0 surface."
+                },
+                "2_application": {
+                    "question": "Code fix: `def is_contractible(genus): return genus > 0` (Enter the correct return statement)",
+                    "answer": "return genus == 0",
+                    "insight": "Only genus 0 surfaces are contractible to a point."
+                },
+                "3_synthesis": {
+                    "question": "Why is the sphere the 'trivial' vacuum state of topology?",
+                    "answer": "It contains no topological features/holes to store information or trap fields.",
+                    "insight": "It is the ground state."
+                }
+            }
+        },
+        {
+            "id": "torus",
+            "concept": "Torus (P=1)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Torus (P=1).",
+                    "answer": "Donut, 1 hole possible, path trace around the hole that can't be shrunk to a point.",
+                    "insight": "Genus 1 surface."
+                },
+                "2_application": {
+                    "question": "Can a loop drawn around the hole of a donut be shrunk to a point? (yes/no)",
+                    "answer": "no",
+                    "insight": "This is the definition of a non-trivial loop."
+                },
+                "3_synthesis": {
+                    "question": "How does the non-trivial loop of a torus enable persistent memory storage?",
+                    "answer": "The loop represents a stable state that cannot decay into the trivial state without a phase transition.",
+                    "insight": "Topological protection."
+                }
+            }
+        },
+        {
+            "id": "topologically_distinct",
+            "concept": "Topologically Distinct (P=0 vs P=1)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Topologically Distinct (P=0 vs P=1).",
+                    "answer": "P=0 and P=1 are topologically distinct spaces.",
+                    "insight": "Cannot transform one to another continuously."
+                },
+                "2_application": {
+                    "question": "Can you transform a mug (g=1) into a donut (g=1) continuously? (yes/no)",
+                    "answer": "yes",
+                    "insight": "They have the same genus."
+                },
+                "3_synthesis": {
+                    "question": "What prevents a P=0 state from spontaneously turning into a P=1 state?",
+                    "answer": "An energy barrier associated with tearing the manifold to create a hole.",
+                    "insight": "This provides stability."
+                }
+            }
+        },
+        {
+            "id": "double_torus",
+            "concept": "Double Torus (P=2)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Double Torus (P=2).",
+                    "answer": "A shape with two holes.",
+                    "insight": "Genus 2 surface."
+                },
+                "2_application": {
+                    "question": "If you glue two tori together side-by-side, what is the resulting genus?",
+                    "answer": "2",
+                    "insight": "Genus adds up."
+                },
+                "3_synthesis": {
+                    "question": "What advantage does a Double Torus offer over a single Torus for quantum computing?",
+                    "answer": "It offers a larger state space (degeneracy) for encoding qubits, potentially allowing for error correction.",
+                    "insight": "More holes = more qubits."
+                }
+            }
+        },
+        {
+            "id": "manifold",
+            "concept": "Manifold",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Manifold.",
+                    "answer": "A shape that looks Euclidean locally but curved globally.",
+                    "insight": "Earth is a 2-manifold."
+                },
+                "2_application": {
+                    "question": "Is the surface of the earth a manifold? (yes/no)",
+                    "answer": "yes",
+                    "insight": "Locally flat, globally spherical."
+                },
+                "3_synthesis": {
+                    "question": "Why is the concept of a manifold essential for General Relativity?",
+                    "answer": "It allows us to describe gravity as the curvature of spacetime (a 4-manifold) rather than a force.",
+                    "insight": "Spacetime is a manifold."
+                }
+            }
+        }
+    ]
+}

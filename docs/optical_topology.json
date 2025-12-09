@@ -1,0 +1,153 @@
+{
+    "deck_name": "Optical Topology",
+    "description": "Chirality, Optical Hopfions, and Solitons in light.",
+    "cards": [
+        {
+            "id": "chirality",
+            "concept": "Chirality",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Chirality.",
+                    "answer": "Handedness of the skyrmion spin.",
+                    "insight": "Left vs Right."
+                },
+                "2_application": {
+                    "question": "If you mirror a right-handed skyrmion, what do you get? (left-handed/right-handed)",
+                    "answer": "left-handed",
+                    "insight": "Mirror inverts chirality."
+                },
+                "3_synthesis": {
+                    "question": "Why does chirality matter in spintronics?",
+                    "answer": "It determines the direction of motion under current (Hall effect).",
+                    "insight": "Directional control."
+                }
+            }
+        },
+        {
+            "id": "optical_hopfion",
+            "concept": "Optical Hopfion",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Optical Hopfion.",
+                    "answer": "'Flying' knots in a waveguide.",
+                    "insight": "Propagating topological structure."
+                },
+                "2_application": {
+                    "question": "Are optical hopfions static or propagating?",
+                    "answer": "propagating",
+                    "insight": "They move at the speed of light (in the medium)."
+                },
+                "3_synthesis": {
+                    "question": "How do you generate an optical hopfion?",
+                    "answer": "By interfering structured light beams to create a 3D polarization knot.",
+                    "insight": "Interference patterns."
+                }
+            }
+        },
+        {
+            "id": "spacetime_hopfion_crystal",
+            "concept": "Space-Time Hopfion Crystal",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Space-Time Hopfion Crystal.",
+                    "answer": "Maintained by temporal beat.",
+                    "insight": "Crystalline structure in spacetime."
+                },
+                "2_application": {
+                    "question": "What stabilizes this crystal structure?",
+                    "answer": "temporal beat",
+                    "insight": "Periodic driving."
+                },
+                "3_synthesis": {
+                    "question": "How does the temporal beat prevent decay?",
+                    "answer": "Resonance with the driving frequency maintains the energy of the topological structure.",
+                    "insight": "Active stabilization."
+                }
+            }
+        },
+        {
+            "id": "soliton",
+            "concept": "Soliton",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Soliton.",
+                    "answer": "Self-reinforcing wave packet that maintains its shape while propagating.",
+                    "insight": "Non-dispersive wave."
+                },
+                "2_application": {
+                    "question": "Does a soliton disperse like a normal wave? (yes/no)",
+                    "answer": "no",
+                    "insight": "It maintains shape."
+                },
+                "3_synthesis": {
+                    "question": "What balances the dispersion in a soliton?",
+                    "answer": "Nonlinearity in the medium balances the dispersion.",
+                    "insight": "Balance of forces."
+                }
+            }
+        },
+        {
+            "id": "frequency_comb",
+            "concept": "Frequency Comb",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Frequency Comb.",
+                    "answer": "Frequency distribution where some bands spike in time.",
+                    "insight": "Comb-like spectrum."
+                },
+                "2_application": {
+                    "question": "What does the spectrum of a frequency comb look like?",
+                    "answer": "discrete lines",
+                    "insight": "Equally spaced lines."
+                },
+                "3_synthesis": {
+                    "question": "How are frequency combs used in metrology?",
+                    "answer": "They provide a ruler for light, allowing precise measurement of optical frequencies.",
+                    "insight": "Precision measurement."
+                }
+            }
+        },
+        {
+            "id": "spacetime_optical_hopfion",
+            "concept": "Space-Time Optical Hopfion (P, Q)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Space-Time Optical Hopfion (P, Q).",
+                    "answer": "Data structure from bits to knots; Space (P) and Time (Q).",
+                    "insight": "Two invariants."
+                },
+                "2_application": {
+                    "question": "What do P and Q represent?",
+                    "answer": "topological charges",
+                    "insight": "Linking numbers."
+                },
+                "3_synthesis": {
+                    "question": "How does this structure encode information?",
+                    "answer": "Through the linking numbers P (spatial) and Q (temporal) which are conserved integers.",
+                    "insight": "Topological encoding."
+                }
+            }
+        },
+        {
+            "id": "hopfion_construction",
+            "concept": "Hopfion Construction",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Hopfion Construction.",
+                    "answer": "Skyrmion (vortex) -> String (extrusion) -> Closed and Twisted (Hopfion).",
+                    "insight": "The process of making a knot."
+                },
+                "2_application": {
+                    "question": "What is the intermediate stage between a Skyrmion and a Hopfion?",
+                    "answer": "string",
+                    "insight": "Extruded vortex."
+                },
+                "3_synthesis": {
+                    "question": "Why must the tube be twisted before gluing?",
+                    "answer": "To create the Hopf invariant (linking number) that protects the knot.",
+                    "insight": "Twist = Stability."
+                }
+            }
+        }
+    ]
+}

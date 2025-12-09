@@ -1,0 +1,90 @@
+{
+    "deck_name": "AlGaAs Material Science",
+    "description": "Why AlGaAs? Optical Confinement, Time Crystal Locking, and Encoding Capacity.",
+    "cards": [
+        {
+            "id": "algaas_choice",
+            "concept": "Why AlGaAs?",
+            "levels": {
+                "1_recall": {
+                    "question": "According to 'Miller's Rule' in the notes, why is AlGaAs the chosen material over others?",
+                    "answer": "It provides extreme Non-Linearity.",
+                    "insight": "High refractive index corresponds to high non-linearity, which is essential for interaction (logic) rather than just transmission."
+                },
+                "2_application": {
+                    "question": "What are the three critical tuning parameters listed for the AlGaAs waveguide?",
+                    "answer": "1. Transparency (Bandgap), 2. Confinement (Refractive Index), 3. Phase Matching (Dispersion).",
+                    "insight": "You must balance these three to trap the light while keeping the signal clean."
+                },
+                "3_synthesis": {
+                    "question": "What is the specific doping ratio mentioned for the AlGaAs bilayer?",
+                    "answer": "20% Aluminum ($Al_{0.2}Ga_{0.8}As$).",
+                    "insight": "This specific ratio creates the lattice matching required to grow defect-free crystals on the GaAs substrate."
+                }
+            }
+        },
+        {
+            "id": "optical_confinement",
+            "concept": "Total Internal Reflection",
+            "levels": {
+                "1_recall": {
+                    "question": "To confine light inside the chip, how must the Refractive Index of the waveguide compare to the cladding?",
+                    "answer": "The Waveguide index must be HIGHER than the Cladding.",
+                    "insight": "This difference creates 'Total Internal Reflection,' trapping the photon stream inside the logic paths."
+                },
+                "2_application": {
+                    "question": "What specific materials are used for the 'Pipe' and the 'Cladding' in this design?",
+                    "answer": "Pipe = AlGaAs; Cladding = InGaP (Indium Gallium Phosphide).",
+                    "insight": "InGaP provides the necessary contrast (Index 3.2 vs ~3.4) to bend the light around the tight corners of the ring."
+                },
+                "3_synthesis": {
+                    "question": "Why is 'Lattice Matching' between the AlGaAs and InGaP layers non-negotiable?",
+                    "answer": "To prevent physical defects (cracks) that would scatter the topological signal.",
+                    "insight": "The atomic spacing must align perfectly so the photon sees a continuous crystal, not a jagged road."
+                }
+            }
+        },
+        {
+            "id": "time_crystal_locking",
+            "concept": "The 298:299 Lock",
+            "levels": {
+                "1_recall": {
+                    "question": "What physical phenomenon allows the system to force light into a 'Standing Wave of Topology'?",
+                    "answer": "Rational Frequency Locking (specifically the 298:299 ratio).",
+                    "insight": "You are forcing two different speeds of light (Red and Blue) to synchronize like gears."
+                },
+                "2_application": {
+                    "question": "What happens every time the Red light circles the ring 298 times and the Blue light circles 299 times?",
+                    "answer": "They meet at the exact same starting point.",
+                    "insight": "This closes the loop in time, creating a stable 'object' (Hopfion) out of moving energy."
+                },
+                "3_synthesis": {
+                    "question": "What device is required to physically stretch the optical cavity to hit this precise integer trick?",
+                    "answer": "AlGaAs Heaters.",
+                    "insight": "By heating the ring, you thermally expand it, fine-tuning the circumference to hold exactly integer wavelengths."
+                }
+            }
+        },
+        {
+            "id": "hopf_encoding_capacity",
+            "concept": "High-Dimensional Encoding",
+            "levels": {
+                "1_recall": {
+                    "question": "What is the theoretical range of the Hopf Index ($Q_H$) for data storage?",
+                    "answer": "1 to 10,000 (effectively infinite integers).",
+                    "insight": "Unlike binary (0/1), this allows for 'Dense Coding' where a single state represents a complex value."
+                },
+                "2_application": {
+                    "question": "How do you calculate the Hopf Index ($Q_H$) from the physical parameters?",
+                    "answer": "$Q_H = P \text{ (Space Twist)} \times Q \text{ (Time Rotation)}$.",
+                    "insight": "Data is the product of Geometry and Time."
+                },
+                "3_synthesis": {
+                    "question": "What does this architecture allow you to do with complex biological entities like proteins?",
+                    "answer": "Map them directly to integer values on the 'Consciousness Manifold'.",
+                    "insight": "Instead of simulating the protein atom-by-atom, you simulate its 'Topological ID' ($Q_H$), massively accelerating computation."
+                }
+            }
+        }
+    ]
+}

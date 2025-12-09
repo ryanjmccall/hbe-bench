@@ -1,0 +1,111 @@
+{
+    "deck_name": "Physics & Solitons",
+    "description": "Exploration of solitons, skyrmions, and topological protection in physics.",
+    "cards": [
+        {
+            "id": "spacetime_hopfion",
+            "concept": "Space-Time Hopfion",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Space-Time Hopfion.",
+                    "answer": "A 3D topological soliton (knot) that persists through time.",
+                    "insight": "A knot in the fabric of spacetime."
+                },
+                "2_application": {
+                    "question": "Is a Hopfion a static structure or a dynamic process?",
+                    "answer": "dynamic",
+                    "insight": "It evolves but maintains structure."
+                },
+                "3_synthesis": {
+                    "question": "How does a Hopfion differ from a standard particle wave-packet?",
+                    "answer": "A Hopfion's stability comes from its knot topology, whereas a wave-packet disperses over time.",
+                    "insight": "Topology prevents dispersion."
+                }
+            }
+        },
+        {
+            "id": "skyrmion",
+            "concept": "Skyrmion",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Skyrmion.",
+                    "answer": "Stable, swirling field configuration behaving like a particle, protected by topology from disappearing.",
+                    "insight": "Named after Tony Skyrme."
+                },
+                "2_application": {
+                    "question": "If a Skyrmion has a winding number of 0, is it topologically stable? (yes/no)",
+                    "answer": "no",
+                    "insight": "Winding number 0 means it can unwind."
+                },
+                "3_synthesis": {
+                    "question": "Why can a Skyrmion survive thermal noise that would scramble a standard magnetic bit?",
+                    "answer": "To destroy it, you must unwind the entire field configuration, which requires overcoming a global energy barrier.",
+                    "insight": "Global protection vs local noise."
+                }
+            }
+        },
+        {
+            "id": "hopf_charge",
+            "concept": "Hopf Charge (Skyrmion Knot)",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Hopf Charge (Skyrmion Knot).",
+                    "answer": "For 3D skyrmions (hopfions), the 'knot' is described by the Hopf charge or linking number.",
+                    "insight": "It quantifies the knottiness."
+                },
+                "2_application": {
+                    "question": "What integer represents a trivial knot (no knot)?",
+                    "answer": "0",
+                    "insight": "Zero linking number."
+                },
+                "3_synthesis": {
+                    "question": "What does the conservation of Hopf charge imply for physical systems?",
+                    "answer": "It implies that the number of knots/particles is conserved during continuous evolution, preventing decay.",
+                    "insight": "Conservation law from topology."
+                }
+            }
+        },
+        {
+            "id": "topological_protection",
+            "concept": "Topological Protection",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Topological Protection.",
+                    "answer": "Robustness against noise due to global structure (cannot untie the knot).",
+                    "insight": "Like a knot in a rope."
+                },
+                "2_application": {
+                    "question": "Does cutting a knot preserve its topological protection? (yes/no)",
+                    "answer": "no",
+                    "insight": "Cutting destroys the topology."
+                },
+                "3_synthesis": {
+                    "question": "How is topological protection analogous to a knot in a rope?",
+                    "answer": "Small shakes (noise) won't untie the knot; you have to cut the rope (high energy) to remove it.",
+                    "insight": "Energy barrier."
+                }
+            }
+        },
+        {
+            "id": "cowlick_analogy",
+            "concept": "Cowlick Analogy",
+            "levels": {
+                "1_recall": {
+                    "question": "Define Cowlick Analogy.",
+                    "answer": "Applies to Skyrmion due to swirling nature and directionality of spin texture.",
+                    "insight": "Hairy Ball Theorem."
+                },
+                "2_application": {
+                    "question": "Can you comb a hairy ball flat without any cowlicks? (yes/no)",
+                    "answer": "no",
+                    "insight": "There must be a singularity."
+                },
+                "3_synthesis": {
+                    "question": "What does the 'Cowlick' represent in the field theory?",
+                    "answer": "It represents a singularity or a topological defect where the field direction is undefined or vanishes.",
+                    "insight": "The center of the skyrmion."
+                }
+            }
+        }
+    ]
+}

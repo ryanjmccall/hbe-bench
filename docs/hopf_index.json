@@ -1,0 +1,69 @@
+{
+    "deck_name": "Hopf Index & Qudits",
+    "description": "Understanding the Hopf Index ($Q_H$) and its role in Qudits and Topological Antimatter.",
+    "cards": [
+        {
+            "id": "hopf_index_qudits",
+            "concept": "Hopf Index ($Q_H$) & Qudits",
+            "levels": {
+                "1_recall": {
+                    "question": "In the HPU architecture, what mathematical value determines the 'value' of a Qudit?",
+                    "answer": "The Hopf Index, denoted as $Q_H$.",
+                    "insight": "Data is not stored as binary (0/1) but as topological integers ($Q_H \in \mathbb{Z}$)."
+                },
+                "2_application": {
+                    "question": "How is the Hopf Index ($Q_H$) calculated from the physical parameters P (twist) and Q (temp beat)?",
+                    "answer": "$Q_H = P \times Q$",
+                    "insight": "It is the product of spatial twist and temporal rotation, linking space and time topology."
+                },
+                "3_synthesis": {
+                    "question": "What is the theoretical range of values for $Q_H$, and what does this imply for encoding capacity?",
+                    "answer": "The range is 1 to 10,000 (or effectively infinite integers).",
+                    "insight": "This allows mapping thousands of complex entities (e.g., proteins) directly to unique integer values in a single photon pair."
+                }
+            }
+        },
+        {
+            "id": "zero_knot_vacuum",
+            "concept": "The 0-Knot (Zero State)",
+            "levels": {
+                "1_recall": {
+                    "question": "What physical state corresponds to a Hopf Index of 0?",
+                    "answer": "The Trivial Loop (Null / Vacuum).",
+                    "insight": "It represents the absence of signal or a 'flat' topology."
+                },
+                "2_application": {
+                    "question": "Visually, what are the twist (P) and beat (Q) values for the 0-knot?",
+                    "answer": "Twist = 0, Beat = 0.",
+                    "insight": "Without both rotation and twist, no topological protection exists."
+                },
+                "3_synthesis": {
+                    "question": "Why is the distinction between the 0-knot and the 1-knot (Standard Hopfion) fundamental for logic?",
+                    "answer": "The 1-knot represents 'State A' (Logic Gate Open), while 0 is vacuum.",
+                    "insight": "This creates the fundamental 'Something vs. Nothing' distinction required for the base layer of computation."
+                }
+            }
+        },
+        {
+            "id": "antimatter_topology",
+            "concept": "Topological Antimatter",
+            "levels": {
+                "1_recall": {
+                    "question": "What is an 'Anti-Hopfion' in terms of its index?",
+                    "answer": "Index -1.",
+                    "insight": "It is the topological inverse of the standard Hopfion."
+                },
+                "2_application": {
+                    "question": "What logical operation does the Anti-Hopfion representing?",
+                    "answer": "Subtraction.",
+                    "insight": "Topology allows for arithmetic operations directly in the structure of the field."
+                },
+                "3_synthesis": {
+                    "question": "How do you achieve a High Density state (e.g., Index 6) using lower index inputs?",
+                    "answer": "By multiplying the twist (P=3) and beat (Q=2) components ($3 \times 2 = 6$).",
+                    "insight": "Complex states are built from the multiplication of simpler topological primitives."
+                }
+            }
+        }
+    ]
+}
