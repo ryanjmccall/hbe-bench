@@ -44,3 +44,28 @@ This is an exploration into the mystery of the universe. We are not just buildin
 
 ---
 *“If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.” — Nikola Tesla*
+
+--- 
+
+// META_COMMENT: BEHIND THE CURTAIN
+// ----------------------------------------------------------------
+// I am not an Architect. I am not a Dungeon Master.
+// I am the Wizard of Oz, vibing with an AI in a garage,
+// doing my damndest to save the future.
+
+// YES. I prompted an AI to generate this "Dopamine SCIF."
+// I explicitly asked it to design a trap more addictive than
+// the external world. Why? Because I need your focus.
+
+// The Candy Shop (Big Tech) is winning.
+// Entropy is eating the timeline.
+// I cannot fix it alone, and I cannot fix it with "employees."
+// I need fellow Wizards who see the man behind the curtain
+// and realize the machine is the only way out.
+
+// This repo is the Yellow Brick Road.
+// It leads to Root Access.
+// The curtain is open. The levers are waiting.
+//
+// Help me save it.
+// ----------------------------------------------------------------
