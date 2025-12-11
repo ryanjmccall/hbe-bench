@@ -24,3 +24,5 @@ pip-log.txt
 outputs/
 wandb/
 .DS_Store
+
+data/
