@@ -122,6 +122,75 @@ def verify_physics(model):
         return False, "Topological invariant broken. Fiber not preserved."
     return True, "Topological constraints verified."
 
+# TODO: Use these metrics to implement the aging oracle
+import numpy as np
+import itertools
+
+def calculate_gromov_hyperbolicity(latent_vectors, sample_size=100):
+    """
+    Measures how 'Hyperbolic' (Young) the model's internal representation is.
+    
+    The Gromov 4-point condition: For any 4 points (x,y,z,w), the two larger 
+    sums of distances S1 >= S2 >= S3 must satisfy: S1 - S2 <= 2*delta.
+    
+    Lower delta = More Hyperbolic = 'Younger' Geometry.
+    High delta = More Euclidean/Spherical = 'Aged' Geometry.
+    """
+    # Sample random points from the latent space to save compute
+    indices = np.random.choice(len(latent_vectors), sample_size, replace=False)
+    points = latent_vectors[indices]
+    
+    delta_max = 0
+    
+    # Check 4-point condition on samples
+    for x, y, z, w in itertools.combinations(points, 4):
+        # Calculate distances between all pairs
+        d_xy = np.linalg.norm(x - y)
+        d_zw = np.linalg.norm(z - w)
+        d_xz = np.linalg.norm(x - z)
+        d_yw = np.linalg.norm(y - w)
+        d_xw = np.linalg.norm(x - w)
+        d_yz = np.linalg.norm(y - z)
+        
+        # The three sums
+        s1 = d_xy + d_zw
+        s2 = d_xz + d_yw
+        s3 = d_xw + d_yz
+        
+        # Sort them: large >= medium >= small
+        sums = sorted([s1, s2, s3], reverse=True)
+        
+        # Gromov Delta for this quad
+        delta = (sums[0] - sums[1]) / 2.0
+        delta_max = max(delta_max, delta)
+        
+    return delta_max
+
+def score_anti_aging(model_history):
+    """
+    Checks if the model 'Ages' (loses curvature) over time.
+    """
+    t_start_vectors = model_history[0]   # Latent state at T=0
+    t_end_vectors = model_history[-1]    # Latent state at T=End
+    
+    delta_start = calculate_gromov_hyperbolicity(t_start_vectors)
+    delta_end = calculate_gromov_hyperbolicity(t_end_vectors)
+    
+    # We want Delta to stay LOW (Hyperbolic).
+    # If Delta increases, the geometry is 'Flattening' (Aging).
+    aging_factor = delta_end - delta_start
+    
+    print(f"🧬 GEOMETRIC HEALTH REPORT:")
+    print(f"   Youth (T=0): δ={delta_start:.4f}")
+    print(f"   Age (T=End): δ={delta_end:.4f}")
+    
+    if aging_factor > 0.1:
+        print("   ⚠️ DIAGNOSIS: Geometric Collapse Detected. System is Aging.")
+        return 0.0 # Fail
+    else:
+        print("   ✅ DIAGNOSIS: Hyperbolic Structure Retained. Eternal Youth.")
+        return 1.0 # Pass
+
 # -----------------------------------------------------------------------------
 # MAIN ORACLE LOOP
 # -----------------------------------------------------------------------------
