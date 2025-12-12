@@ -1,13 +1,15 @@
 name: HBE Oracle
 
-# Trigger the Oracle only when code is pushed to a PR
+# Trigger on both PRs (for Bounties) and Pushes (for your own sanity check)
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
 permissions:
   contents: read
-  pull-requests: write # Required for the bot to comment
+  pull-requests: write # Essential for the bot to comment
 
 jobs:
   verify-topology:
@@ -26,31 +28,39 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install numpy torch
-        # Add any other physics libs here later
+        # Add 'scipy' or others here if your math gets more complex
 
     - name: 🔮 Run The Oracle (Benchmark)
       id: oracle
+      shell: bash
       run: |
-        # We capture the output to post it back to the user
-        # 2>&1 ensures we catch errors too
-        OUTPUT=$(python benchmark.py 2>&1)
+        # 1. Run the benchmark and capture output for the comment
+        # We allow this to "fail" (|| true) so the script continues to the logging step
+        OUTPUT=$(python benchmark.py 2>&1) || true
         
-        # We save the output to the GitHub Environment for the next step
+        # 2. Save output to Environment Variable (Multiline safe)
         echo "BENCHMARK_LOG<<EOF" >> $GITHUB_ENV
         echo "$OUTPUT" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
         
-        # We assume benchmark.py returns exit code 0 for success, 1 for fail
+        # 3. Run it again for the official Status Check (Red X / Green Check)
+        # This time, if it fails, the whole job fails.
         python benchmark.py
 
     - name: 💰 Post Result to PR
-      if: always() # Run this even if the benchmark failed
+      # ONLY run this step if it is a Pull Request (avoids crashes on main push)
+      # Run 'always()' so we get the comment even if the benchmark failed
+      if: always() && github.event_name == 'pull_request' 
       uses: actions/github-script@v6
       with:
         script: |
           const output = process.env.BENCHMARK_LOG;
-          const status = '${{ job.status }}' === 'success' ? '✅ **PASSED**' : '❌ **FAILED**';
-          const payoutMsg = '${{ job.status }}' === 'success' 
+          // Check the conclusion of the previous step ('verification')
+          const outcome = '${{ job.status }}'; 
+          
+          const statusHeader = outcome === 'success' ? '✅ **PASSED**' : '❌ **FAILED**';
+          
+          const payoutMsg = outcome === 'success' 
             ? '\n\n**System Note:** Verification successful. This solution is eligible for the Bounty Treasury.' 
             : '\n\n**System Note:** Topological constraints violated. Payout locked.';
 
@@ -58,5 +68,5 @@ jobs:
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
-            body: `### 🔮 The Oracle Speaks\n\n${status}\n\n\`\`\`\n${output}\n\`\`\`${payoutMsg}`
+            body: `### 🔮 The Oracle Speaks\n\n${statusHeader}\n\n\`\`\`text\n${output}\n\`\`\`${payoutMsg}`
           })
