@@ -2,7 +2,11 @@
   <img src="assets/banner.png" width="100%" />
   <h1>HBE-BENCH</h1>
   <h3>The Olympics of Mind Uploading</h3>
-</div>
+  
+  <br>
+  <img src="https://img.shields.io/badge/Status-Infrastructure%20Provisioning-orange?style=for-the-badge&logo=construct" alt="Status: Infrastructure Provisioning" />
+  <br>
+  </div>
 
 <br>
 
