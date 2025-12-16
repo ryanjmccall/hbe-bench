@@ -20,7 +20,7 @@ topic_emojis = {
     "Hopf Index & Qudits": "🔢"
 }
 
-def load_topics(docs_dir="docs"):
+def load_topics(docs_dir="docs/curriculum"):
     """Loads topics from JSON files in the docs directory."""
     global topics
     topics = {}
@@ -145,7 +145,7 @@ def start_dojo():
     load_topics()
     
     if not topics:
-        print("No topics found in docs/ directory.")
+        print("No topics found in docs/curriculum/ directory.")
         return
 
     print_header()

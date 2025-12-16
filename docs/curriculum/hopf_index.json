@@ -9,11 +9,11 @@
                 "1_recall": {
                     "question": "In the HPU architecture, what mathematical value determines the 'value' of a Qudit?",
                     "answer": "The Hopf Index, denoted as $Q_H$.",
-                    "insight": "Data is not stored as binary (0/1) but as topological integers ($Q_H \in \mathbb{Z}$)."
+                    "insight": "Data is not stored as binary (0/1) but as topological integers ($Q_H \\in \\mathbb{Z}$)."
                 },
                 "2_application": {
                     "question": "How is the Hopf Index ($Q_H$) calculated from the physical parameters P (twist) and Q (temp beat)?",
-                    "answer": "$Q_H = P \times Q$",
+                    "answer": "$Q_H = P \\times Q$",
                     "insight": "It is the product of spatial twist and temporal rotation, linking space and time topology."
                 },
                 "3_synthesis": {

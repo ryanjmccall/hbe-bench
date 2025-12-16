@@ -14,7 +14,7 @@
                 "2_application": {
                     "question": "What specific physical mechanism generates the 'Q' value (Time Twist)?",
                     "answer": "A Bichromatic Beat between two laser beams ('Bass' and 'Treble').",
-                    "insight": "The rhythm of interference between two slightly different frequencies ($\lambda_1$ and $\lambda_2$) drives the rotation."
+                    "insight": "The rhythm of interference between two slightly different frequencies ($\\lambda_1$ and $\\lambda_2$) drives the rotation."
                 },
                 "3_synthesis": {
                     "question": "Visually, what is the difference between a static P=1 state and a dynamic Q state?",
@@ -29,7 +29,7 @@
             "levels": {
                 "1_recall": {
                     "question": "What musical analogy is used to describe the two laser beams driving the engine?",
-                    "answer": "'Bass' ($\lambda_1$) and 'Treble' ($\lambda_2$).",
+                    "answer": "'Bass' ($\\lambda_1$) and 'Treble' ($\\lambda_2$).",
                     "insight": "Just like in music, the interplay between a low and high frequency creates a beat or rhythm."
                 },
                 "2_application": {
