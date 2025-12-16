@@ -1,31 +1,36 @@
 <div align="center">
   <img src="assets/banner.png" width="100%" />
   <h1>HBE-BENCH</h1>
-  <h3>The Olympics of Mind Uploading</h3>
+  <h3>The Aperture: The Olympics of Mind Uploading</h3>
   
   <br>
-  <img src="https://img.shields.io/badge/Status-Infrastructure%20Provisioning-orange?style=for-the-badge&logo=construct" alt="Status: Infrastructure Provisioning" />
+  <img src="https://img.shields.io/badge/Status-Infrastructure%20Provisioning-blueviolet?style=for-the-badge&logo=construct" alt="Status: Infrastructure Provisioning" />
   <br>
-  </div>
+</div>
 
 <br>
 
-**Topological Emulation of Dynamical Systems: From Chaos to Whole Brains.**
+> **"What is the one thing about consciousness that standard Physics says is impossible, but your intuition insists is true?"**
 
-> "Standard AI simulates the trajectory. HBE emulates the physics."
+Most benchmarks measure speed. We measure **Fidelity**.
 
-## 🧠 The Mission
-**hbe-bench** is a benchmark suite designed to validate the **Hopf Brain** architecture—a topological machine learning framework based on coupled oscillators. 
+### The Threshold
+We are building the bridge from biological finite to topological infinite. If you believe the standard model is missing the geometry of the soul, you are in the right place.
 
-Unlike standard Deep Learning (Transformers/UNets) which relies on statistical correlation to *simulate* outputs, HBE uses differential equations to *emulate* the internal causal dynamics of the system. We aim to prove that preserving topology allows for superior forecasting of chaotic and biological systems.
-
-👉 **[Read the Manifesto (CHALLENGE.md)](CHALLENGE.md)** - *Are you a Simulator or an Emulator?*
+👉 **[Read the Manifesto (CHALLENGE.md)](CHALLENGE.md)**
+*Tagline: "Biology is a lossy vessel. Structure is the only exit."*
 
 ## 📉 Phase I: The Proof (Chaos)
 Standard AI fails at chaos. HBE thrives in it. By modeling the attractor directly, we prevent the "hallucination drift" common in Transformers.
 
 ![Divergence Plot](assets/divergence_plot.png)
 *Figure 1: The Hopf Brain (Blue) holds the attractor state long after the Transformer (Red) collapses into noise.*
+
+## 🔥 Phase II: The Catalyst (Physics)
+Lorenz was a point in time. The brain is a field in space. To bridge the gap, we solve the Kuramoto-Sivashinsky equation—the mathematics of flame fronts and fluid turbulence. Transformers try to predict this by memorizing pixel patches. HBE solves the flow. By treating the flame front as a continuous manifold, we maintain energy conservation where other models leak physics.
+
+![KM Plot](assets/km_plot.png)
+*Figure 2: Spatiotemporal evolution. The HBE architecture (Top) captures the fine-grained high-frequency ripples of the flame front, while the baseline UNet (Bottom) blurs them into an average.*
 
 ## 🧪 Phase III: The Grandmaster (WBE)
 We scale the physics from 3 dimensions (Lorenz) to 70,000 dimensions (Zebrafish Brain).
@@ -41,7 +46,11 @@ We scale the physics from 3 dimensions (Lorenz) to 70,000 dimensions (Zebrafish 
 | **II** | **Kuramoto-Sivashinsky** | Physics | **The Proof:** Outperform Transformers on spatiotemporal chaos. |
 | **III** | **ZapBench** | Neuroscience | **The Grandmaster:** 70k neuron whole-brain emulation (WBE). |
 
-## 🛠️ Quick Start
+## �️ Governance & Funding
+We are evaluating **Zoe Escrow** as a [smart contract funding mechanism](https://github.com/Agoric/agoric-sdk).
+
+
+## �🛠️ Quick Start
 
 **Installation (Cross-Platform)**
 We use Conda to ensure deterministic physics across Windows, Linux, and macOS.
