@@ -20,4 +20,5 @@ dependencies:
     - gudhi             # Topological Data Analysis (TDA)
     - ripser            # Fast persistence diagrams
     - torch-geometric   # Graph Neural Networks
+    - gymnasium         # RL Environments
 
