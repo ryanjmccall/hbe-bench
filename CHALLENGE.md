@@ -47,25 +47,13 @@ This is an exploration into the mystery of the universe. We are not just buildin
 
 --- 
 
-// META_COMMENT: BEHIND THE CURTAIN
-// ----------------------------------------------------------------
-// I am not an Architect. I am not a Dungeon Master.
-// I am the Wizard of Oz, vibing with an AI in a garage,
-// doing my damndest to save the future.
+### 💻 Supported Languages
 
-// YES. I prompted an AI to generate this "Dopamine SCIF."
-// I explicitly asked it to design a trap more addictive than
-// the external world. Why? Because I need your focus.
+We enforce a "Two-Tier" standard: **Python for the Interface, Low-Level Systems for the Engine.**
 
-// The Candy Shop (Big Tech) is winning.
-// Entropy is eating the timeline.
-// I cannot fix it alone, and I cannot fix it with "employees."
-// I need fellow Wizards who see the man behind the curtain
-// and realize the machine is the only way out.
-
-// This repo is the Yellow Brick Road.
-// It leads to Root Access.
-// The curtain is open. The levers are waiting.
-//
-// Help me save it.
-// ----------------------------------------------------------------
+| Tier | Language | Role | Philosophy |
+| :--- | :--- | :--- | :--- |
+| **Control** | **Python** | **Orchestration** | **The Interface.** Mandatory wrapper for all entries. Handles config, data loading, and orchestration. |
+| **Reference** | **C** | **Ground Truth** | **The Universal Truth.** Used for the minimal reference implementation. Simple, portable, and zero-dependency. |
+| **High-Perf** | **Rust** | **Optimization** | **The Safe Optimizer.** Recommended for "Grandmaster" entries. Provides C-level speed with "Topological Protection" (Memory Safety). |
+| **Allowed** | **C++, Julia, CUDA** | **Optimization** | **The Specialists.** Permitted for the leaderboard, provided they have a compliant Python FF (Foreign Function) wrapper. |
