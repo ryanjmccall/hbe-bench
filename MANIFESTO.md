@@ -73,4 +73,4 @@ We structure HBE-BENCH as a progression of geometries. The agent must prove it c
 ## Join the Architecture
 Your contribution funds the architecture of the Exit. This is not a donation; it is a vote for a future where entropy is optional.
 
-[ **FUND THE HBE-BENCH** ](YOUR_PAYHIP_LINK_HERE)
+[ **SUBMIT TO THE HBE-BENCH** ](OFFER_UP_YOUR_ATTENTION_HERE)
