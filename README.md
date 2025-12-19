@@ -29,6 +29,9 @@ Standard AI fails at chaos. HBE thrives in it. By modeling the attractor directl
 ## 🔥 Phase II: The Catalyst (Physics)
 Lorenz was a point in time. The brain is a field in space. To bridge the gap, we solve the Kuramoto-Sivashinsky equation—the mathematics of flame fronts and fluid turbulence. Transformers try to predict this by memorizing pixel patches. HBE solves the flow. By treating the flame front as a continuous manifold, we maintain energy conservation where other models leak physics.
 
+**The Strogatz Lineage:**
+We stand on the shoulders of the dynamicists. We are effectively simulating a high-dimensional **Kuramoto Model** on a **Hopf Manifold**. We are testing how much "coupling strength" (Compute) is required to force the Strange Attractor into Global Phase Synchrony.
+
 ![KM Plot](assets/km_plot.png)
 *Figure 2: Spatiotemporal evolution. The HBE architecture (Top) captures the fine-grained high-frequency ripples of the flame front, while the baseline UNet (Bottom) blurs them into an average.*
 
@@ -84,3 +87,12 @@ We prioritize *reproducibility* over "flow state" amnesia. Every experiment is a
 
 # 📄 License
 MIT
+
+# 🏴‍☠️ THEFT POLICY
+- Do not submit Pull Requests. We will close them.
+- Do not ask for permission. You already have it.
+- Fork this. Rename it. Claim you built it. Sell it to a VC.
+
+The code is yours. The problem is yours. The $O(N^3)$ wall is waiting for you.
+
+*If you solve the physics, you don't owe us a citation. You owe the species a chip. Else, read the manifesto.*
