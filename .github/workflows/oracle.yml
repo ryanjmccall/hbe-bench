@@ -47,6 +47,9 @@ jobs:
         # This time, if it fails, the whole job fails.
         python benchmark.py
 
+    - name: Verify HCB-1 Bifurcation
+      run: python benchmarks/hcb_1/generator.py --verify
+
     - name: 💰 Post Result to PR
       # ONLY run this step if it is a Pull Request (avoids crashes on main push)
       # Run 'always()' so we get the comment even if the benchmark failed
