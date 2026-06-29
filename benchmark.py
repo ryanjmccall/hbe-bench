@@ -122,6 +122,17 @@ def verify_physics(model):
         return False, "Topological invariant broken. Fiber not preserved."
     return True, "Topological constraints verified."
 
+def verify_hcb_bifurcation():
+    """Issue #4: verify the hypometabolic crash benchmark generator."""
+    try:
+        from benchmarks.hcb_1.generator import verify_bifurcation
+    except Exception as e:
+        return False, f"HCB-1 verifier import failed: {str(e)}"
+
+    passed, message = verify_bifurcation()
+    print(f"   [HCB-1] {message}")
+    return passed, message
+
 # TODO: Use these metrics to implement the aging oracle
 import numpy as np
 import itertools
@@ -211,7 +222,8 @@ def run_oracle():
         ("Functional", verify_functional(user_model, test_data[0])),
         ("Performance", verify_performance(user_model, test_data[0])),
         ("Accuracy", verify_accuracy(user_model, test_data)),
-        ("Physics", verify_physics(user_model))
+        ("Physics", verify_physics(user_model)),
+        ("HCB-1 Bifurcation", verify_hcb_bifurcation())
     ]
     
     # 3. Final Judgement
